@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos personales</title>
+</head>
+<body>
+
+        <form action="" method="" target="_self">
+            <p>Nombre:
+                <input type="text" name="nombre" maxlength="20" required></p>
+            <p>Apellido:
+                <input type="text" name="Apellido" maxlength="25" required></p>
+             <p>DNI:
+                <input type="number" name="dni" required ></p>
+                <p>correo electronico:
+                    <input type="email" name="email" required></p>
+            <p>
+            <p>Fecha de nacimiento:
+                <input type="date" name="fecha_nacimiento" required ></p>
+            <p>correo electronico:
+             <input type="email" name="email" required></p>
+            <p>
+                Estado Civil (Soltera/o, Casada/o, Divorciada/o, Viuda/o, Conviviente). Selección única.
+                Estado Civil<br>
+                <input type="radio"name="estado civil" value="S"> Soltera/o <br>
+                <input type="radio"name="estado civil" value="C"> Casada/o <br>
+                <input type="radio"name="estado civil" value="V"> Viuda/o <br>
+                <input type="radio"name="estado civil" value="Co"> Conviviente<br>
+            </p>
+            <p>Intereses (Culturales, Deportivos, Turísticos, Sociales, Otros). Selección múltiple<br>
+                <p>
+
+
+                    <input type="checkbox"name="intereses" value="C"> Culturales <br>
+                    <input type="checkbox"name="intereses" value="D"> Deportivos <br>
+                    <input type="checkbox"name="intereses" value="T"> Turisticos <br>
+                    <input type="checkbox"name="intereses" value="S"> Sociales<br>
+                    <input type="checkbox"name="intereses" value="O"> Otros<br>
+                    </p>
+            </p>
+            <p>Descripcion de Intereses</p>
+                <textarea name = "intereses" cols = "40" rows = "10" maxlength="400">
+                Describe tus intereses
+                </textarea><br>
+                País de Residencia (Argentina, Bolivia, Brasil, Colombia, Costa Rica, Chile, México, Nicaragua, Panamá, Paraguay,
+                Perú, Uruguay, Venezuela, Otro) Selección única.
+            <p>País de residencia
+
+                <select name="Pais_residencia">
+                <option value= "Argentina">Argentina</option>
+                <option value= "Bolivia">Bolivia</option>
+                <option value= "Brasil">Brasil</option>
+                <option value= "Colombia">Colombia</option>
+                <option value= "Costa_Rica">Costa Rica</option>
+                <option value= "Chile">Chile</option>
+                </select>
+            </p>
+            Recibir información adicional (Seleccionado por omisión).<br>
+                <button type="submit" im><img src="/Clase 3/img/boton.png" height="50" /></button>
+        </form>
+</body>
+</html>

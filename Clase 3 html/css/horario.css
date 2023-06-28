@@ -1,0 +1,55 @@
+form{
+   background-color: red;
+   border: 1px;
+}
+
+thead{
+   background-color:cadetblue;
+   border: 1px;
+}
+tbody{
+    background-color: burlywood;
+}
+tfoot{
+    background-color:blueviolet;
+    text-align: center;
+}
+Caption{
+    background-color:cadetblue;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+ }
+ td{
+    width:"50%" ;
+ }
+ th{
+    width:"50%" ;
+    background-color:  white;
+ }
+ table{
+    
+   padding-top: 20px;
+   background-color: orange;
+   border-radius: 10px;
+
+ }
+ #primero{
+   border-top: red 5px dashed;
+   border-right: green 10px solid;
+   border-bottom: blue 4px dotted;
+   border-left: orange 7px solid;
+   padding: 100px;
+   margin: 40px 40px 0px 10px;
+   float: left;
+
+
+ }
+ #segundo{
+   margin-left: 500px;
+   margin-top: 150px;
+   float:left; 
+   position:absolute; 
+   left:200px;
+
+ }
