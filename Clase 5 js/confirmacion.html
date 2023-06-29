@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/Clase 5/css/style.css'>
+    <title>confirmacion</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Compra de entradas
+        </h1>
+        <h2>Confirmacion de compra</h2>
+       <!-- <p id="datos"></p>-->
+        <label id="datos"></label>
+
+        <h2>precio total:</h2>
+        <p id="total"></p>
+        <input type="submit" value="Confirmar" onclick="alert('muchas gracias')">
+    </div>
+    
+</body>
+<!--<script>
+    //tomamos de la url los parametros pasados desde el formulario
+    let parametros = new URLSearchParams(window.location.search);
+
+    //declaro variable por cada uno de los parametros que recibo del formulario
+    let apellido = parametros.get('apellido');
+    let nombre = parametros.get('nombre');
+    let cantidad = parametros.get('cantidad');
+
+    const precio = 500;
+
+    //Acceder a elementos del documento
+    document.getElementById('datos').innerHTML = "tus datos "+nombre+" "+apellido;
+    document.getElementById('total').innerHTML = "$ " + precio * cantidad;
+</script>-->
+
+<script src="js/confirmacion.js"></script>
+</html>

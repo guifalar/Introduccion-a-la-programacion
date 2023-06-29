@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p>
+        Construir una página HTML, que contenga un algoritmo en JavaScript, que solicite al
+internauta el ingreso de los siguientes datos:
+➢ Nombre y Apellido
+➢ Edad
+➢ Nacionalidad
+Luego debe mostrar en la página el siguiente mensaje:
+“Gracias por ingresar la información solicitada, necesitamos por favor la corrobore
+Su nombre es: (colocar el nombre y apellido)
+Su edad es: (colocar la edad)
+Su Nacionalidad es: (colocar la nacionalidad)”</p>
+
+<script >
+
+  var Nombre = prompt("Ingreses su nombre y apellido");
+  let edad = parseInt(prompt("Ingrese su edad"));
+  var Nacionalidad = prompt("Ingreses su nacionalidad");
+
+
+let confirmar = confirm("Gracias por ingresar la información solicitada, necesitamos por favor la corrobore. Su nombre es :" + Nombre+ " su edad es: "+ edad + " Su nacionalidad es: "+Nacionalidad);
+alert(confirmar);
+</script>
+    
+
+
+</body>
+</html>
