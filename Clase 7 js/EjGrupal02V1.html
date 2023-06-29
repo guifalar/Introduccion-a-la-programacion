@@ -1,0 +1,73 @@
+<!-- Ejercicio 1376: Agregar filas a una tabla de manera dinámica. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Ejercicio 1376</title>
+</head>
+
+<body>
+    <h1>Datos Personales</h1>
+
+    <form id= 'datos' action="" method = "get" >
+
+        <p> NUMERO 1:</p>
+        <p>  <input type = "number"  name="numero1" required>
+            </p>
+        <p>NUMERO 2:</p>
+        </p>  <input type = "number" name="numero2" required>
+        </p> 
+            
+        <br>
+        <input type="submit"  value="BOTON">
+    </form>  
+    
+    <table ID="tablaDatos">
+        <caption>
+            Tabla de DATOS
+       </caption>
+       <tehead>
+
+        <tr>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+    <script>
+  
+
+        const form = document.getElementById("datos");
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            let datosFormulario = new FormData(form);
+
+            let tablaDatosRef = document.getElementById("tablaDatos");
+
+            let nuevaFila = tablaDatosRef.insertRow(-1);
+
+        let datosRef= nuevaFila.insertCell(0);
+        datosRef.textContent = datosFormulario.get("numero1");
+
+        let segundaFila = tablaDatosRef.insertRow(-1);
+
+        let datosRefsegfila= segundaFila.insertCell(0);
+        datosRefsegfila.textContent = datosFormulario.get("numero2");
+
+        
+
+        
+
+
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!--Participantes del grupo 
+Carlos Hernandez
+Anabela Mignone
+Federico Mendez
+Melina Martinez
+Omar Ignacio Caseres
+Guillermo Fabian Alarcon-->
+
+<!--Nombre de los archivos
+index.html
+participantes.html
+copiar.html
+calculadora.html
+style.css
+app.js
+-->
+<!--Index.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio Grupal 2 </title>
+</head>
+
+<body>
+<form id= 'datos' action="" method = "get" >
+    <h4><a href="participantes.html"> Participantes del grupo</a></h4>
+    <h1>Calculadora</h1>
+    <br><br><br>
+    <label>Numero 1</label>
+    <br>
+    <input  id="valor" type= "text"  required>
+    <br> 
+    <br>
+    <br> 
+    <label>Numero 2</label>
+    <br>
+    <input  id="valor2" type= "text"  required>
+    <br>
+    <input type="button" value="BOTON">
+    <br>
+    <br>
+    <br>
+    <br>
+    <label id="resultado"></label>
+
+    <h4><a href="copiar.html"> Vaya al siguiente ejercicio</a></h4>
+</form>
+
+</body>
+
+</html>
+<!--==============================================================================================-->
+<!-- participantes.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">     
+    <title>Ejercicio Grupal 2</title>
+</head>
+
+<body>
+
+    <table ID="Participantes">
+        <caption>
+            <h1>Participantes Ejercicio Grupal Nº 2</h1>
+       </caption>
+       <tehead>
+            <tr>
+                <th>NOMBRES</th>
+            </tr>
+            <tr>
+                <td>Carlos Hernandez</td>
+            </tr>
+            <tr>
+                <td>Anabela Mignone</td>
+            </tr>
+            <tr>
+                <td>Federico Mendez</td>
+            </tr>
+            <tr>
+                <td>Melina Martinez</td>
+            </tr>
+            <tr>
+                <td>Omar Ignacio Caseres </td>
+            </tr>
+            <tr>
+                <td>Guillermo Fabian Alarcon</td>
+            </tr>
+            
+    </table>
+
+</body>
+
+</html>
+<!--==============================================================================================-->
+<!-- copiar.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio Grupal 2 </title>
+</head>
+
+<body>
+
+<form id= 'datos' action="" method = "get" >
+    <h4><a href="participantes.html"> Participantes del grupo</a></h4>
+    <h1>Calculadora</h1>
+    <br><br><br>
+    <label>Numero 1</label>
+    <br>
+    <input  id="valor" type= "text"  required>
+    <br> 
+    <br>
+    <br> 
+    <label>Numero 2</label>
+    <br>
+    <input  id="valor2" type= "text"  required>
+    <br>
+    <input type="button" value="Copiar" onclick="copiar()">
+    <br>
+    <br>
+    <label id="resultado"></label>
+    <br>
+    <label id="resultado2"></label>
+
+    <h4><a href="calculadora.html"> Vaya al siguiente ejercicio</a></h4>
+</form>
+<script src="app.js"></script>    
+</body>
+
+</html>
+<!--==============================================================================================-->
+<!-- calculadora.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio Grupal 2 </title>
+</head>
+
+<body>
+    
+<form id= 'datos' action="" method = "get" >
+    <h4><a href="participantes.html"> Participantes del grupo</a></h4>
+    <h1>Calculadora</h1>
+
+    <label>Numero 1</label>
+    <br>
+    <input  id="valor" type= "text"  required>
+    <br> 
+    <br>
+    <br> 
+    <label>Numero 2</label>
+    <br>
+    <input  id="valor2" type= "text"  required>
+    <br>
+    <input type="button" value="+" onclick="suma()">
+    <br>
+    <input type="button" value="-" onclick="resta()">
+    <br>
+    <input type="button" value="*" onclick="producto()">
+    <br>
+    <input type="button" value="/" onclick="cociente()">
+    <br>
+    <br>
+    <br>
+    <br>
+    <label id="resultado"></label>
+</form>
+
+<script src="app.js"></script>    
+</body>
+
+</html>
+<!--==============================================================================================-->
+<!-- style.css-->
+
+form{
+    width:300px;
+	height: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius:10px;
+	margin:auto;
+	background-color:white;
+	background-color:cornflowerblue;
+    align-items: center;
+ }
+
+
+
+
+ form input[type="button"]{
+
+	width:50%;
+	height: 30px;
+	padding-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border:1px solid #000;
+	border-radius:10px;
+	color:#fff;
+	background-color:red;
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana;
+
+	
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+	
+}
+
+form label{
+	width:150px;
+	font-weight:bold;
+	display:inline-block;
+	text-align: center;
+	
+}
+
+table{width:600px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+   
+
+}
+th{
+    color:#fff;
+	background-color:black;   
+}
+
+caption{
+    color: white;
+}
+<!--==============================================================================================-->
+<!-- app.js-->
+function copiar(num1, num2) {
+    var num1, num2;
+    num1 = document.getElementById("valor").value;
+    num2 = document.getElementById("valor2").value;
+
+    if( num1 == null || num1.length == 0 || /^\s+$/.test(num1)|| num1== "" ) {
+        document.getElementById("resultado").innerHTML = "debe completar el primer campo";
+    return false;
+    }
+    if( num2 == null || num2.length == 0 || /^\s+$/.test(num2) ) {
+        document.getElementById("resultado").innerHTML = "debe completar el segundo campo";
+    return false;
+    }
+    if (isNaN(parseInt(num1))) {
+        alert("El primer campo debe ser un numero");
+        return false;
+      }  
+    if (isNaN(parseInt(num2))) {
+        alert("El segundo campo debe ser un numero");
+        return false;
+    }  
+    
+    document.getElementById("resultado").innerHTML = "Numero 1: " + num1  ;   
+    num2 = document.getElementById("valor2").value;
+    document.getElementById("resultado2").innerHTML = "Numero 2: " + num2  ;
+    document.getElementById("datos").reset();
+}
+
+   function suma(num1, num2) {
+
+        var num1, num2;
+        num1 = document.getElementById("valor").value;
+        num2 = document.getElementById("valor2").value;
+
+            if( num1 == null || num1.length == 0 || /^\s+$/.test(num1)|| num1== "" ) {
+                document.getElementById("resultado").innerHTML = "debe completar el primer campo";
+            return false;
+            }
+            if( num2 == null || num2.length == 0 || /^\s+$/.test(num2) ) {
+                document.getElementById("resultado").innerHTML = "debe completar el segundo campo";
+            return false;
+            }
+            if (isNaN(parseInt(num1))) {
+                alert("El primer campo debe ser un numero");
+                return false;
+              }  
+            if (isNaN(parseInt(num2))) {
+                alert("El segundo campo debe ser un numero");
+                return false;
+            }  
+
+        var sumado = parseInt(num1) + parseInt(num2);
+        document.getElementById("resultado").innerHTML = "la suma de " + num1 + " + " + num2 + " = " +
+        sumado
+        document.getElementById("datos").reset();
+
+       
+    }
+    function resta(num1, num2) {
+        var num1, num2;
+        num1 = document.getElementById("valor").value;
+        num2 = document.getElementById("valor2").value;
+        
+        if( num1 == null || num1.length == 0 || /^\s+$/.test(num1)|| num1== "" ) {
+            document.getElementById("resultado").innerHTML = "debe completar el primer campo";
+        return false;
+        }
+        if( num2 == null || num2.length == 0 || /^\s+$/.test(num2) ) {
+            document.getElementById("resultado").innerHTML = "debe completar el segundo campo";
+        return false;
+        }
+        if (isNaN(parseInt(num1))) {
+            alert("El primer campo debe ser un numero");
+            return false;
+          }  
+        if (isNaN(parseInt(num2))) {
+            alert("El segundo campo debe ser un numero");
+            return false;
+        }  
+        var restando = parseInt(num1) - parseInt(num2);
+        document.getElementById("resultado").innerHTML = "la resta de " + num1 + " - " + num2 + " = " +
+        restando
+        document.getElementById("datos").reset();
+       
+    }
+    function producto(num1, num2) {
+        var num1, num2;
+        num1 = document.getElementById("valor").value;
+        num2 = document.getElementById("valor2").value;
+        if( num1 == null || num1.length == 0 || /^\s+$/.test(num1)|| num1== "" ) {
+            document.getElementById("resultado").innerHTML = "debe completar el primer campo";
+        return false;
+        }
+        if( num2 == null || num2.length == 0 || /^\s+$/.test(num2) ) {
+            document.getElementById("resultado").innerHTML = "debe completar el segundo campo";
+        return false;
+        }
+        if (isNaN(parseInt(num1))) {
+            alert("El primer campo debe ser un numero");
+            return false;
+          }  
+        if (isNaN(parseInt(num2))) {
+            alert("El segundo campo debe ser un numero");
+            return false;
+        }  
+        var producto = parseInt(num1) * parseInt(num2);
+        document.getElementById("resultado").innerHTML = "el producto de " + num1 + " * " + num2 + " es " +
+        producto;
+        document.getElementById("datos").reset();
+       
+    }
+
+    function cociente(num1, num2) {
+        var num1, num2;
+        num1 = document.getElementById("valor").value;
+        num2 = document.getElementById("valor2").value;
+        if( num1 == null || num1.length == 0 || /^\s+$/.test(num1)|| num1== "" ) {
+            document.getElementById("resultado").innerHTML = "debe completar el primer campo";
+        return false;
+        }
+        if( num2 == null || num2.length == 0 || /^\s+$/.test(num2) ) {
+            document.getElementById("resultado").innerHTML = "debe completar el segundo campo";
+        return false;
+        }
+        if (isNaN(parseInt(num1))) {
+            alert("El primer campo debe ser un numero");
+            return false;
+          }  
+        if (isNaN(parseInt(num2))) {
+            alert("El segundo campo debe ser un numero");
+            return false;
+        }   
+        var cociente = parseInt(num1) / parseInt(num2);
+        if( num2 != 0) 
+        {document.getElementById("resultado").innerHTML = "el cociente de " + num1 + " y " + num2 + " es " +
+        cociente}
+         else
+        {document.getElementById("resultado").innerHTML = "No se puede dividir por cero";
+        document.getElementById("datos").reset();
+
+    }
+
+    }
+    document.getElementById("datos").reset();
+
+    
+
+
+
+
+
+
+   
+
+

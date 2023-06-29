@@ -1,0 +1,89 @@
+<!-- Ejercicio 1376: Agregar filas a una tabla de manera dinámica. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Ejercicio 1376</title>
+</head>
+
+<body>
+    <h1>JavaScript - Ejercicio 1376</h1>
+
+    <form id= 'datos' action="" method = "get" >
+        <p> NOMBRE:
+            <input type = "text" minlength="2" maxlength="20" name="nombre" required>
+            </p>
+          <p>APELLIDO:
+            <input type = "text" minlength="2" maxlength="25" name="apellido" required>
+            </p> 
+            <p>EDAD:
+                <input type="number" min="1" step="1" minlength="18" max="120" name="edad" required>
+            </p> 
+            <p>DNI:  
+                <input type="text" maxlength="20" name="dni" required>
+            </p>
+            
+            <p>CORREO ELECTRONICO:
+                <input type="email" name="email" required>
+        <br>
+        <input type="submit"  value="Insertar fila">
+    </form>    
+
+    <table ID="tablaDatos">
+        <caption>
+            Tabla de DATOS
+       </caption>
+       <tehead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>EDAD</th>
+                <th>DNI</th>
+                <th>CORREO ELECTRONICO</th>
+            </tr>
+        <tr>
+            <td></td>
+        </tr>
+
+    </table>
+    <script>
+
+        const form = document.getElementById("datos");
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            let tablaFormData = new FormData(form);
+
+            let tablaDatosRef = document.getElementById("tablaDatos");
+
+            let newTablaRowRef = tablaDatosRef.insertRow(-1);
+
+           let datosRef= newTablaRowRef.insertCell(0);
+           datosRef.textContent = tablaFormData.get("nombre");
+
+           
+          datosRef= newTablaRowRef.insertCell(1);
+          datosRef.textContent = tablaFormData.get("apellido");
+
+        })
+
+       /* //tomamos de la url los parametros pasados desde el formulario
+        let parametros = new URLSearchParams(window.location.search);
+        //declaro variable por cada uno de los parametros que recibo del formulario
+        let nombre = parametros.get('nombre');
+        //Acceder a elementos del documento
+        //document.getElementById('tblDatos').innerHTML = nombre;
+        function insertarFila(){
+        let tblDatos = document.getElementById(tblDatos).insertRow(0);
+            let col1 = tblDatos.insertCell(0);   
+            col1.innerHTML = nombre;  
+        }
+    */
+    </script>
+</body>
+
+</html>

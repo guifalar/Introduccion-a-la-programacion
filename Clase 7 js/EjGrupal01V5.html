@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EjGrupal01.css">
+    
+  
+    
+    <title>Ejercicio Grupal 01</title>
+</head>
+
+<body>
+    
+    <form id= 'datos' action="" method = "get" >
+        <h4><a href="EjGrupal01V5part.html"> Participantes del grupo</a></h4>
+        <h1>Datos Personales</h1>
+        <hr>
+        <p> <label>NOMBRE:</label>
+            <!--minlength="2" maxlength="20" required fueron reemplazados por alert con javascritp-->
+            <input id="nombre" type = "text"  name="nombre" >
+            </p>
+            <p><label>APELLIDO:</label>
+            <!--minlength="2" maxlength="25"  required-->    
+            <input id="apellido" type = "text" name="apellido">
+           </p> 
+            <p><label>EDAD:</label>
+                <input id="edad" type="number" min="18"  max="120" name="edad" required>
+            </p> 
+             <p><label>DNI</label> 
+                <input id="dni" type="text" minlength="7"  name="dni" required>
+           </p>    
+            <p><label>CORREO ELECTRONICO:</label>
+                <input id="email" type="email" name="email" required>
+            </p>
+        <br>
+        <input type="button" onclick="validarFormulario()" value="Insertar fila">
+        
+    </form>    
+    <br>
+    <br>
+    <table ID="tablaDatos">
+        <caption>
+            Tabla de DATOS
+       </caption>
+       <tehead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>EDAD</th>
+                <th>DNI</th>
+                <th>CORREO ELECTRONICO</th>
+            </tr>
+        <tr>
+            <td></td>
+        </tr>
+
+    </table>
+    <script src="EjGrupal01V5.js"></script>
+</body>
+
+</html>

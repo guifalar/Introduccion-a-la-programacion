@@ -1,0 +1,57 @@
+<!-- Ejercicio 1376: Agregar filas a una tabla de manera dinámica. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Ejercicio 1376</title>
+</head>
+
+<body>
+    <h1>Datos Personales</h1>
+
+    <form id= 'datos' action="" method = "get" >
+
+        <p> NUMERO 1:</p>
+        <p>  <input type = "number"  name="numero1" required>
+            </p>
+        <p>NUMERO 2:</p>
+        </p>  <input type = "number" name="numero2" required>
+        </p> 
+            
+        <br>
+        <input type="button" value="+" onclick="suma()">
+    <p id="resultado"></p>
+    </form>  
+    
+
+
+
+    <script>
+  
+
+
+
+        function suma(numero1, numero2) {
+            var nummero1, numero2;
+            numero1 = document.getElementById("valor").value;
+            numero2 = document.getElementById("valor2").value;
+            var sumado = parseInt(numero1) + parseInt(numero2);
+            document.getElementById("resultado").innerHTML = "la suma de " + numero1 + " y " + numero2 + " es " +
+            sumado;
+        }
+
+        
+
+        
+
+
+   
+
+    </script>
+</body>
+
+</html>
