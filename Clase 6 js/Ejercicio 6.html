@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--1. Agregar a la página todo lo que escriba el usuario (usando prompt)
+como párrafo <p>, hasta que ingrese “Fin”-->
+    <script>
+        let parrafo;
+        do {
+        parrafo = prompt("Introduce un texto para parrafo");
+        let hx = "<p>"+parrafo+"</p>";
+
+        document.write(hx);
+        } while (!(parrafo == "fin"));
+        
+        </script>
+<!--
+    <script>
+        for (let i = 1; i <= 6; i++) {
+        let hx = "<h"+i+">Titulo "+i+"</h"+i+">";
+        document.write(hx);
+        }
+    </script>
+ -->   
+</body>
+</html>

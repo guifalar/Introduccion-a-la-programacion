@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <p>   Hacer un programa que:
+        ● Pregunte si quiere recibir notificaciones por mail (utilizando confirm)
+        ● Si dice que si:
+        ○ Pida su email (utilizando prompt)
+        ○ Pida su edad (utilizando prompt)
+        ○ Si la edad es mayor o igual a 18: Mostrar el mail
+        ○ Si No: Mostrar que “No tiene la edad suficiente”
+    </p><br><br><br><br><br>
+
+    <script>
+        //ejemplo usando condicional simple y valores booleanos
+        let mensaje=confirm("Bienvenido a nuestra página. Quiere continuar?");
+      
+        if (mensaje == false){
+            document.write("Lo esperamos la proxima vez ");    
+        }else{
+           
+            let mail = prompt("ingrese su email"); 
+            let edad = parseInt(prompt("ingrese su edad"));
+            //uso un if dentro de un else
+            if (edad>=18){
+            resultado = mail;
+            } else {
+             resultado = 'No tiene la edad suficiente';
+            }
+
+            document.write(resultado);
+            console.log(resultado);  
+        }
+        
+
+
+    </script>
+  
+    
+</body>
+</html>

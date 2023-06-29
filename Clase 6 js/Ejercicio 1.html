@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <p>   Hacer un programa que:
+    ● Pida un número (utilizando prompt)
+    ● Si es mayor a cero mostrar “Número positivo”
+    ● Si es menor a cero mostrar “Número negativo”
+    ● Si es igual a cero mostrar “Es cero”
+    ● Si no cumple ninguna mostrar “No es un número!”
+    </p><br><br><br><br><br>
+    <script >
+        //Este es un if anidado
+        let numero = parseInt(prompt("Ingrese un numero"));
+        var resultado;
+        if (numero>0){
+            resultado = "Número positivo";
+        } else if (numero<0){
+            resultado = "Número negativo";
+        }  else if (numero==0){
+            resultado = "Es cero";
+        } else {
+            resultado = "No es un número!";
+        }
+       document.write(resultado);
+       console.log(resultado);
+
+    </script>
+    
+</body>
+</html>
