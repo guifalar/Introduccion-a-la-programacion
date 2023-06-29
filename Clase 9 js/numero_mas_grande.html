@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+    1 Hace una función que reciba un arreglo de números y devuelva el número más grande
+    <br><br>
+
+</head>
+<body>
+
+    <button onclick="ejecutar()">Ejecutar</button>
+    
+    <script>
+        function ejecutar(){
+            //declaro un arreglo
+        let numerosAleatorios=[100,25,48,1500,52,34];
+            // ordeno los numeros de mayor a menor
+        numerosAleatorios.sort((a,b) => b-a);
+        // muestro por pantalla los numero ordenados
+        document.write("El array esta compuesto por los numeros" + numerosAleatorios);
+        // hago dos saltos de linea
+        let saltoLinea = "<br>";
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+        //muestro por pantalla el mayor
+        document.write("el número mayor es " + numerosAleatorios[0])
+    }
+      
+    </script>
+</body>
+</html>

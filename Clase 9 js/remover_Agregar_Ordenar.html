@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+    Crea un arreglo con números del 1 al 6, luego, mostrando el arreglo en cada paso :
+○ Remove el ultimo numero
+○ Agrega el número 0 al final
+○ Ordena el arreglo
+    <br><br>
+
+</head>
+<body>
+
+    <button onclick="ejecutar()">Ejecutar</button>
+    
+    <script>
+        function ejecutar(){
+            //declaro un arreglo
+        let numerosAleatorios=[1,2,3,4,5,6];
+        // muestro por pantalla el array 
+        document.write("El array esta compuesto por los numeros" + numerosAleatorios);
+            // saco el ultimo numero
+        numerosAleatorios.pop(5);
+        // hago dos saltos de linea
+        let saltoLinea = "<br>";
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+        // muestro por pantalla el array sin el ultimo numero
+        document.write("El array esta sin el ultimo numero es : " + numerosAleatorios);
+        // hago dos saltos de linea
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+        //agrego el cero al final
+        numerosAleatorios.push(0);
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+        // muestro por pantalla el array con el cero al final
+        document.write("El array con el cero al final es : " + numerosAleatorios);
+        //ordeno el arreglo
+        numerosAleatorios.sort((a,b) => a-b);
+        // hago dos saltos de linea
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+        // muestro por pantalla el array ordenado
+        document.write("El array ordenado es : " + numerosAleatorios);
+        }
+    </script>
+</body>
+</html>
